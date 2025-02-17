@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main>
+      <h1>Todo List</h1>
+
+      <div id="date-container">
+        <span id="date-display"></span>
+      </div>
+
+      <div class="todo-container">
+        <form id="todoForm">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Do homework..."
+            aria-label="task to do"
+          />
+          <button type="submit" id="add-task" class="add-task">Add</button>
+          <button type="button" id="clearListBtn">Clear list</button>
+        </form>
+
+        <ul id="list">
+          <!-- <li class="todo-list-item">
+            <span class="todo-text">Do homework</span>
+            <button>X</button>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
